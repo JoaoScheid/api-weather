@@ -14,20 +14,28 @@
         <h1 id="title">Previsão do tempo</h1>
     </header>
     <main>
-        
         <form id="prevForm">
             <div class="flex">
-            <label for="cidade">Digite a cidade:</label>
-            <input type="text" id="cidade" placeholder="EX: São Paulo">
+            <label for="city">Digite a cidade:</label>
+            <input type="text" id="city" placeholder="EX: São Paulo">
+            <button type="submit" id="botao">Buscar</button>
         </div>
         </form>
-    
+        <h2 id="result-title">Resultado</h2>
+        <img src="/celsius.png" alt="termometro">
+        <div id="resultado">
+            <h2 id="name" id="region"></h2>
+            <p id="temp_c"></p>
+            <p id="feelslike_c"></p>
+            <p id="humidity"></p>
+            <p id="wind_kph"></p>
+        </div>
     </main>
 
 
-    <!-- <footer class="footer">
+     <footer class="footer">
         <p class="text">Copyright Todos os direitos reservados</p>
     </footer>
-    <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 </html>
